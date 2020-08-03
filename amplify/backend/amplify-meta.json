@@ -1,0 +1,65 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-playwellapp-dev-124047-authRole",
+			"UnauthRoleArn": "arn:aws:iam::562751369963:role/amplify-playwellapp-dev-124047-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::562751369963:role/amplify-playwellapp-dev-124047-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "amplify-playwellapp-dev-124047-deployment",
+			"UnauthRoleName": "amplify-playwellapp-dev-124047-unauthRole",
+			"StackName": "amplify-playwellapp-dev-124047",
+			"StackId": "arn:aws:cloudformation:us-east-1:562751369963:stack/amplify-playwellapp-dev-124047/1630f270-d5a8-11ea-afe0-0ac97ebd7097",
+			"AmplifyAppId": "d3d6848b9o9fle"
+		}
+	},
+	"auth": {
+		"playwellappfc7f1dec": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false,
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-playwellapp-dev-124047-deployment/amplify-cfn-templates/auth/playwellappfc7f1dec-cloudformation-template.yml",
+				"logicalId": "authplaywellappfc7f1dec"
+			},
+			"lastPushTimeStamp": "2020-08-03T17:26:40.152Z",
+			"output": {
+				"AppClientSecret": "1lq39eida305j2kos8bo0fefmelgpke8hcq1fhs52nji2qigo6uo",
+				"UserPoolId": "us-east-1_VwIWJyaGG",
+				"AppClientIDWeb": "7ik2ju7qqv4tv8qiu71i1vqtgh",
+				"AppClientID": "5bfs7c8ogoksjfruoipp4j4tcb",
+				"IdentityPoolId": "us-east-1:31d0be66-9edf-47b7-ae2a-702b4e69643d",
+				"IdentityPoolName": "playwellappfc7f1dec_identitypool_fc7f1dec__dev",
+				"UserPoolName": "playwellappfc7f1dec_userpool_fc7f1dec"
+			},
+			"lastPushDirHash": "Z+tFOFiIrNQus/sfAHz22kdfm1I="
+		}
+	},
+	"api": {
+		"playwellapp": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "videos",
+							"apiKeyExpirationDays": "30"
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "tbkwusyp2bdozbrcfcy7jn2agi",
+				"GraphQLAPIEndpointOutput": "https://nyb7jyk3qvggll2kmepcyp3jce.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-jtygm46ukfcnbb5x53f4edqb54"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-playwellapp-dev-124047-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiplaywellapp"
+			},
+			"lastPushTimeStamp": "2020-08-03T17:26:41.537Z",
+			"lastPushDirHash": "yqo0pVNK4zTnm4Ed8hvVZwPjqWw="
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+    "CreateAPIKey": 1,
+    "AppSyncApiName": "playwellapp",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "S3DeploymentBucket": "amplify-playwellapp-dev-124047-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/ac72734d002b541352099863eae19c63904ee7df"
+}

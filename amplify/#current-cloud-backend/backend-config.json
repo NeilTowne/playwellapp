@@ -1,0 +1,28 @@
+{
+	"auth": {
+		"playwellappfc7f1dec": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	},
+	"api": {
+		"playwellapp": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "videos",
+							"apiKeyExpirationDays": "30"
+						}
+					}
+				}
+			}
+		}
+	}
+}
