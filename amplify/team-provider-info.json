@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-playwellapp-dev-124047-authRole",
+            "UnauthRoleArn": "arn:aws:iam::562751369963:role/amplify-playwellapp-dev-124047-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::562751369963:role/amplify-playwellapp-dev-124047-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-playwellapp-dev-124047-deployment",
+            "UnauthRoleName": "amplify-playwellapp-dev-124047-unauthRole",
+            "StackName": "amplify-playwellapp-dev-124047",
+            "StackId": "arn:aws:cloudformation:us-east-1:562751369963:stack/amplify-playwellapp-dev-124047/1630f270-d5a8-11ea-afe0-0ac97ebd7097",
+            "AmplifyAppId": "d3d6848b9o9fle"
+        },
+        "categories": {
+            "auth": {
+                "playwellappfc7f1dec": {}
+            }
+        }
+    }
+}

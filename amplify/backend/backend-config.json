@@ -1,0 +1,10 @@
+{
+	"auth": {
+		"playwellappfc7f1dec": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}
