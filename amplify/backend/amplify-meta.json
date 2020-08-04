@@ -61,5 +61,11 @@
 			"lastPushTimeStamp": "2020-08-03T17:26:41.537Z",
 			"lastPushDirHash": "yqo0pVNK4zTnm4Ed8hvVZwPjqWw="
 		}
+	},
+	"storage": {
+		"s309243c03": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
 	}
 }

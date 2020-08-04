@@ -1,17 +1,44 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import './broadcast.js'
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+import Sidebar from "./Sidebar";
+import RequestForm from './broadcastform'
+
+
+function onClick(e, item) {
+	window.navigate('./broadcast.js');
+}
+
+const items = [
+   { name: "Events Calendar", label: "Events Calendar", 
+     items: [
+     	{ name: "offline events", label: "Offline Events", onClick },
+     	{ name: "broadcast events", label: "Broadcast Events", onClick }
+     ]
+ },
+  {
+    name: "live streams",
+    label: "Live Streams",
+    items: [
+      { name: "live stream categories", label: "Live Stream Categories", onClick },
+      { name: "live streams", label: "Live Streams", onClick }
+    ]
+  }
+];
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>We now have Auth!</h1>
-      </header>
+      <Sidebar items={items} />
       <AmplifySignOut />
+      <RequestForm />
     </div>
+
+
+
   );
 }
 
