@@ -83,7 +83,11 @@ export default function RequestForm() {
       <LongTextField name="videoTitle" />
       <LongTextField name="videoDescription" />
        </Form.Group>
-      <Form.Group widths="equal">
+      <Form.Group>
+        <LongTextField name="weekDays" />
+        <label for="item-1">
+   		<input type="checkbox" name="items[]" id="item-1" value="Repeat Weekly"/> Repeat Weekly
+		</label>
         <SubmitField value='Submit Request'/>
       </Form.Group>
       <h2>Or input a stream URL </h2>

@@ -14,6 +14,7 @@ const simpleRequestSchema = new SimpleSchema({
   videoDescription: { label: 'Video Description', type: String },
   activityFromDate: { label: 'Date Range From:', type: Date, defaultValue: new Date() },
   streamKey: { label: 'Stream URL', type: String },
+  weekDays: { label: 'Day', type: String, defaultValue: 'Monday' },
 });
 
 
