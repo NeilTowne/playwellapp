@@ -6,10 +6,10 @@ import './broadcast.js'
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 import Sidebar from "./Sidebar";
 import RequestForm from './broadcastform'
-
+import { registerIVSTech } from 'amazon-ivs-player';
 
 function onClick(e, item) {
-	window.navigate('./broadcast.js');
+	window.navigate();
 }
 
 const items = [

@@ -16,8 +16,32 @@ import {
   DateField,
   RadioField,
   LongTextField,
-  SubmitField
+  SubmitField,
+  SelectField
 } from 'uniforms-semantic';
+
+const professions = [
+  {
+    label: 'Developer',
+    value: 'developer'
+  },
+  {
+    label: 'Tester',
+    value: 'tester'
+  },
+  {
+    label: 'Product owner',
+    value: 'product-owner'
+  },
+  {
+    label: 'Project manager',
+    value: 'project-manager'
+  },
+  {
+    label: 'Businessman',
+    value: 'businessman'
+  }
+];
 
 const style = {
   margin: 200,
@@ -45,9 +69,9 @@ var handleAdd = (doc) => {
   addToStorage();
 
   //write data to the API using Graphql
-  // (async () => {
-  //   const newRequest = await API.graphql(graphqlOperation(mutations.createRequest, {input: doc}));
-  // })();
+   // (async () => {
+   //   const newRequest = await API.graphql(graphqlOperation(mutations.createRequest, {input: doc}));
+   // })();
 }
 
 export default function RequestForm() {
@@ -60,11 +84,13 @@ export default function RequestForm() {
       <LongTextField name="videoDescription" />
        </Form.Group>
       <Form.Group widths="equal">
-        <DateField name="activityFromDate" />
-        <DateField name="activityToDate" />
         <SubmitField value='Submit Request'/>
       </Form.Group>
-      <ErrorsField />
+      <h2>Or input a stream URL </h2>
+        <Form.Group widths="equal">
+        <LongTextField name="streamKey" />
+        <SubmitField value='Submit Request'/>
+      </Form.Group>
     </AutoForm>
     </form>
   );
