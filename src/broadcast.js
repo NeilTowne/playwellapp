@@ -12,7 +12,7 @@ import {LongTextField, DateField} from 'uniforms-semantic';
 const simpleRequestSchema = new SimpleSchema({
   videoTitle: { label: 'Title of Video', type: String },
   videoDescription: { label: 'Video Description', type: String },
-  activityFromDate: { label: 'Date Range From:', type: Date, defaultValue: new Date() },
+  activityFromDate: { label: 'Stream Start Time', type: Date, defaultValue: new Date() },
   streamKey: { label: 'Stream URL', type: String },
   weekDays: { label: 'Day', type: String, defaultValue: 'Monday' },
 });

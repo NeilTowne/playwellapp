@@ -85,6 +85,7 @@ export default function RequestForm() {
        </Form.Group>
       <Form.Group>
         <LongTextField name="weekDays" />
+        <DateField name="activityFromDate" />
         <label for="item-1">
    		<input type="checkbox" name="items[]" id="item-1" value="Repeat Weekly"/> Repeat Weekly
 		</label>
