@@ -5,6 +5,9 @@ import { Form, Header, Segment } from 'semantic-ui-react';
 
 import { API, graphqlOperation } from "aws-amplify";
 import * as mutations from './graphql/mutations';
+import { Component } from 'react';
+import axios from 'axios';
+import FileUpload from './FileUpload'
 
 
 import RequestSchema from './broadcast';
@@ -69,16 +72,16 @@ var handleAdd = (doc) => {
   addToStorage();
 
   //write data to the API using Graphql
-   // (async () => {
-   //   const newRequest = await API.graphql(graphqlOperation(mutations.createRequest, {input: doc}));
-   // })();
+    // (async () => {
+    //   const newRequest = await API.graphql(graphqlOperation(mutations.createRequest, {input: doc}));
+    // })();
 }
 
 export default function RequestForm() {
 
   return (
     <form>
-    <AutoForm style={style} schema={RequestSchema} onSubmit={doc => handleAdd(doc)}>
+    <AutoForm style={style} schema={RequestSchema} onSubmit={model => alert(JSON.stringify(model, null, 2))}>
       <Form.Group widths="equal">
       <LongTextField name="videoTitle" />
       <LongTextField name="videoDescription" />
@@ -89,6 +92,7 @@ export default function RequestForm() {
         <label for="item-1">
    		<input type="checkbox" name="items[]" id="item-1" value="Repeat Weekly"/> Repeat Weekly
 		</label>
+      <FileUpload />
         <SubmitField value='Submit Request'/>
       </Form.Group>
       <h2>Or input a stream URL </h2>

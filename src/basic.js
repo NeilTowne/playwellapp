@@ -112,6 +112,7 @@ function setupPlayer() {
     demo = new PlayerDemo(player);
     loadFormStream();
 
+    
 }
 
 function setupForm() {
